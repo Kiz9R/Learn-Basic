@@ -1,0 +1,78 @@
+{
+  "unpublishedPage": {
+    "name": "Page1",
+    "slug": "page1",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 4896,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 620,
+          "containerStyle": "none",
+          "snapRows": 124,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 89,
+          "minHeight": 1292,
+          "dynamicTriggerPathList": [],
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Page1_Class",
+              "name": "Class",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Page1_School_Name",
+              "name": "School_Name",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Page1_Section",
+              "name": "Section",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Page1_getAll",
+              "name": "getAll",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Page1",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": []
+  },
+  "deleted": false,
+  "gitSyncId": "6633822385b422541c178662_6089a0a1-b7d9-490e-8089-c175795bf944"
+}

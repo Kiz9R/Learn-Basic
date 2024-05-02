@@ -1,0 +1,3 @@
+SELECT DISTINCT section
+FROM student
+ORDER BY section ASC;
