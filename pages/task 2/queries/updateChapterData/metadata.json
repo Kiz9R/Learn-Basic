@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "updateData",
+    "name": "updateChapterData",
     "datasource": {
       "name": "Student DB",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT * FROM public.\"chapter\" LIMIT 10;",
+      "body": "UPDATE chapter c\nSET c.score = '{{this.params.score}}', c.time_taken_in_sec = '{{this.params.time_taken_in_sec}}'\nWHERE c.roll_number = '{{this.params.roll_number}}'\nAND c.subject = {{subject.selectedOptionValue}}\nAND c.chapter_name={{chapter.selectedOptionValue}}\nAND c.test_name={{test.selectedOptionValue}};",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -27,17 +27,29 @@
       ]
     },
     "executeOnLoad": false,
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "chapter.selectedOptionValue",
+      "subject.selectedOptionValue",
+      "test.selectedOptionValue",
+      "this.params.roll_number",
+      "this.params.score",
+      "this.params.time_taken_in_sec"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-05-04T10:07:41Z"
+    "createdAt": "2024-05-04T10:35:33Z"
   },
-  "id": "task 2_updateData",
+  "id": "task 2_updateChapterData",
   "deleted": false,
-  "gitSyncId": "6633822385b422541c178662_d86e3fb1-f051-4d19-b347-5782ffcd3fda"
+  "gitSyncId": "6633822385b422541c178662_6c970845-c012-4210-83df-005ecd35e819"
 }

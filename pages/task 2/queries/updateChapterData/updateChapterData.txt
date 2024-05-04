@@ -1,0 +1,6 @@
+UPDATE chapter c
+SET c.score = '{{this.params.score}}', c.time_taken_in_sec = '{{this.params.time_taken_in_sec}}'
+WHERE c.roll_number = '{{this.params.roll_number}}'
+AND c.subject = {{subject.selectedOptionValue}}
+AND c.chapter_name={{chapter.selectedOptionValue}}
+AND c.test_name={{test.selectedOptionValue}};
