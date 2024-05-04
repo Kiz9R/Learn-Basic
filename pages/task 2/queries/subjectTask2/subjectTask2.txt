@@ -1,0 +1,1 @@
+SELECT DISTINCT subject FROM chapter;
