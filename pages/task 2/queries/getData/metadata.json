@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT s.roll_number,s.student_name, c.score, c.time_taken_in_sec\n        FROM student s\n        JOIN chapter c ON s.roll_number = c.roll_number\n        WHERE s.school_name = {{school.selectedOptionValue}} \n\t\t\t\tAND c.subject = {{subject.selectedOptionValue}}\n          AND s.class = {{Class.selectedOptionValue}}\n\t\t\t\t\tAND s.section = {{section.selectedOptionValue}}\n          AND c.chapter_name = {{chapter.selectedOptionValue}}\n          AND c.test_name = {{test.selectedOptionValue}};\n         ",
+      "body": "SELECT s.roll_number,s.student_name, c.score, c.time_taken_in_sec\n        FROM student s\n        JOIN chapter c ON s.roll_number = c.roll_number\n        WHERE s.school_name = {{school.selectedOptionValue}} \n\t\t\t\tAND c.subject = {{subject.selectedOptionValue}}\n          AND s.class = {{Class.selectedOptionValue}}\n\t\t\t\t\tAND s.section = {{section.selectedOptionValue}}\n          AND c.chapter_name = {{chapter.selectedOptionValue}}\n          AND c.test_name = {{test.selectedOptionValue}}\n\t\t\t\t\tORDER BY c.roll_number ASC;\n         ",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

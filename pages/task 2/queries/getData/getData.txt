@@ -6,5 +6,6 @@ SELECT s.roll_number,s.student_name, c.score, c.time_taken_in_sec
           AND s.class = {{Class.selectedOptionValue}}
 					AND s.section = {{section.selectedOptionValue}}
           AND c.chapter_name = {{chapter.selectedOptionValue}}
-          AND c.test_name = {{test.selectedOptionValue}};
+          AND c.test_name = {{test.selectedOptionValue}}
+					ORDER BY c.roll_number ASC;
          
