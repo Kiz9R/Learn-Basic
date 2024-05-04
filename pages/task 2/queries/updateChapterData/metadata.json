@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE chapter c\nSET c.score = '{{this.params.score}}', c.time_taken_in_sec = '{{this.params.time_taken_in_sec}}'\nWHERE c.roll_number = '{{this.params.roll_number}}'\nAND c.subject = {{subject.selectedOptionValue}}\nAND c.chapter_name={{chapter.selectedOptionValue}}\nAND c.test_name={{test.selectedOptionValue}};",
+      "body": "UPDATE chapter \nSET score = '{{this.params.score}}', time_taken_in_sec = '{{this.params.time_taken_in_sec}}'\nWHERE roll_number = '{{this.params.roll_number}}'\nAND subject = {{subject.selectedOptionValue}}\nAND chapter_name={{chapter.selectedOptionValue}}\nAND test_name={{test.selectedOptionValue}};",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
