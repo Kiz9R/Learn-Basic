@@ -28,6 +28,17 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "task 2_functions.showInTable",
+              "name": "functions.showInTable",
+              "collectionId": "task 2_functions",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
               "id": "task 2_ChapterNameQl",
               "name": "ChapterNameQl",
               "confirmBeforeExecute": false,
@@ -73,36 +84,6 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "task 2_getDataQl",
-              "name": "getDataQl",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "subject.selectedOptionValue",
-                "section.selectedOptionValue",
-                "test.selectedOptionValue",
-                "school.selectedOptionValue",
-                "Class.selectedOptionValue",
-                "chapter.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "task 2_functions.showInTable",
-              "name": "functions.showInTable",
-              "collectionId": "task 2_functions",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  const students = await getDataQl.data.data.student;\n  const tableData = students.map(student => {\n    return {\n      rollNumber: student.roll_number,\n      studentName: student.student_name,\n      score: student.Chapters.score,\n      timeTaken: student.Chapters.time_taken_in_sec\n    };\n  });\n  return tableData;\n}"
-              ],
               "timeoutInMillisecond": 10000
             }
           ]
