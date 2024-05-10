@@ -1,3 +1,0 @@
-SELECT DISTINCT class
-FROM student
-ORDER BY class ASC ;

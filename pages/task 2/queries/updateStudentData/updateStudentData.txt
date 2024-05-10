@@ -1,3 +1,0 @@
-UPDATE student
-SET student_name = '{{this.params.student_name}}'
-WHERE roll_number = '{{this.params.roll_number}}';

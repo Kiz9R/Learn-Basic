@@ -1,2 +1,0 @@
-SELECT * FROM public."student"
-ORDER BY roll_number ASC;
