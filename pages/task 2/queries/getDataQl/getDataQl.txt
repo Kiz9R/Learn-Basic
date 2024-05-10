@@ -1,0 +1,10 @@
+query GetStudentTestScores($schoolName: String!, $subject: String!, $class: Int!, $section: String!, $chapterName: String!, $testName: String!) {
+  student(where: {school_name: {_eq: $schoolName}, class: {_eq: $class}, section: {_eq: $section}, Chapters: {subject: {_eq: $subject}, chapter_name: {_eq: $chapterName}, test_name: {_eq: $testName}}},order_by: {roll_number: asc}) {
+    roll_number
+    student_name
+    Chapters {
+      score
+      time_taken_in_sec
+    }
+  }
+}

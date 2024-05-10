@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 610,
+          "bottomRow": 620,
           "containerStyle": "none",
           "snapRows": 79,
           "parentRowSpace": 1,
@@ -28,60 +28,60 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "task 2_ClassTask2",
-              "name": "ClassTask2",
+              "id": "task 2_ChapterNameQl",
+              "name": "ChapterNameQl",
               "confirmBeforeExecute": false,
-              "pluginType": "DB",
+              "pluginType": "API",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "task 2_SchoolName",
-              "name": "SchoolName",
+              "id": "task 2_ClassQl",
+              "name": "ClassQl",
               "confirmBeforeExecute": false,
-              "pluginType": "DB",
+              "pluginType": "API",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "task 2_chapterNameTask2",
-              "name": "chapterNameTask2",
+              "id": "task 2_SchoolNameQl",
+              "name": "SchoolNameQl",
               "confirmBeforeExecute": false,
-              "pluginType": "DB",
+              "pluginType": "API",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "task 2_sectionTask2",
-              "name": "sectionTask2",
+              "id": "task 2_SectionQl",
+              "name": "SectionQl",
               "confirmBeforeExecute": false,
-              "pluginType": "DB",
+              "pluginType": "API",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "task 2_subjectTask2",
-              "name": "subjectTask2",
+              "id": "task 2_SubjectQl",
+              "name": "SubjectQl",
               "confirmBeforeExecute": false,
-              "pluginType": "DB",
+              "pluginType": "API",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "task 2_testNameTask2",
-              "name": "testNameTask2",
+              "id": "task 2_TestNameQl",
+              "name": "TestNameQl",
               "confirmBeforeExecute": false,
-              "pluginType": "DB",
+              "pluginType": "API",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
           ],
           [
             {
-              "id": "task 2_getData",
-              "name": "getData",
+              "id": "task 2_getDataQl",
+              "name": "getDataQl",
               "confirmBeforeExecute": false,
-              "pluginType": "DB",
+              "pluginType": "API",
               "jsonPathKeys": [
                 "subject.selectedOptionValue",
                 "section.selectedOptionValue",
@@ -89,6 +89,19 @@
                 "school.selectedOptionValue",
                 "Class.selectedOptionValue",
                 "chapter.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "task 2_functions.showInTable",
+              "name": "functions.showInTable",
+              "collectionId": "task 2_functions",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  const students = await getDataQl.data.data.student;\n  const tableData = students.map(student => {\n    return {\n      rollNumber: student.roll_number,\n      studentName: student.student_name,\n      score: student.Chapters.score,\n      timeTaken: student.Chapters.time_taken_in_sec\n    };\n  });\n  return tableData;\n}"
               ],
               "timeoutInMillisecond": 10000
             }

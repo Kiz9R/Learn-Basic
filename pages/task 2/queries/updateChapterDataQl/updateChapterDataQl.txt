@@ -1,0 +1,5 @@
+mutation updateChapter($condition: chapter_bool_exp!, $payload: chapter_set_input) {
+  update_chapter(where: $condition, _set: $payload) {
+    affected_rows
+  }
+}

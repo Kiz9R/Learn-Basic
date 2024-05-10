@@ -1,18 +1,19 @@
 export default {
-
 	
-	Palindrome:()=>{
-	let s=""
-	let s1="";
-	for(let i=0;i<s.length;i++){
-		let c=s.charAt(i);
-		s1=c+s1;
-	}
-		if(s===s1){  
-			return true;
-		}else
-			return false;
-},
+	showInTable: async()=>{
+		
+		const students = await getDataQl.data.data.student;
+
+		const tableData = students.map(student => {
+			return {
+				rollNumber: student.roll_number,
+				studentName: student.student_name,
+				score: student.Chapters.score, 
+				timeTaken: student.Chapters.time_taken_in_sec
+			};
+		});
+		return tableData;
+	},
 
 	manyUpdates:async()=>{
 		const updates=Table1.updatedRows.map(i=>i.allFields);

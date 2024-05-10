@@ -1,0 +1,5 @@
+mutation updateStudent($condition: student_bool_exp!, $payload: student_set_input) {
+  update_student(where: $condition, _set: $payload) {
+    affected_rows
+  }
+}

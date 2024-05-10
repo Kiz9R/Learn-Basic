@@ -23,7 +23,7 @@ export default {
 		resetWidget('Select1');
 		resetWidget('Select2');
 		resetWidget('Select3');
-		await getAll.run();
+		await getAllQl.run();
 		this.getFilteredStudent();
 	},
 }

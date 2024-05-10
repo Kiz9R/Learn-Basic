@@ -48,7 +48,7 @@
     "parentColumnSpace": 19.234375,
     "dynamicTriggerPathList": [{"key": "onOptionChange"}],
     "labelPosition": "Top",
-    "sourceData": "{{chapterNameTask2.data}}",
+    "sourceData": "{{ChapterNameQl.data.data.chapter}}",
     "key": "7is9089rtt",
     "labelTextSize": "0.875rem",
     "isDeprecated": false,
@@ -65,6 +65,6 @@
     "responsiveBehavior": "fill",
     "mobileLeftColumn": 32,
     "maxDynamicHeight": 9000,
-    "onOptionChange": "{{getData.run()}}",
+    "onOptionChange": "{{getDataQl.run();}}",
     "minDynamicHeight": 4
 }

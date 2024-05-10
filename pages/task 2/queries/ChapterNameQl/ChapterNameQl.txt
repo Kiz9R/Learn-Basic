@@ -1,0 +1,5 @@
+query chapter {
+  chapter(distinct_on: chapter_name) {
+    chapter_name
+  }
+}

@@ -48,7 +48,7 @@
     "parentColumnSpace": 19.234375,
     "dynamicTriggerPathList": [{"key": "onOptionChange"}],
     "labelPosition": "Top",
-    "sourceData": "{{sectionTask2.data}}",
+    "sourceData": "{{SectionQl.data.data.student}}",
     "key": "7is9089rtt",
     "labelTextSize": "0.875rem",
     "isDeprecated": false,
@@ -65,6 +65,6 @@
     "responsiveBehavior": "fill",
     "mobileLeftColumn": 27,
     "maxDynamicHeight": 9000,
-    "onOptionChange": "{{getData.run()}}",
+    "onOptionChange": "{{getDataQl.run();}}",
     "minDynamicHeight": 4
 }
