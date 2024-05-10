@@ -1,0 +1,9 @@
+query student {
+  student(order_by: {class: asc, roll_number: asc, school_name: asc, section: asc, student_name: asc}) {
+    school_name
+    class
+    roll_number
+    section
+    student_name
+  }
+}

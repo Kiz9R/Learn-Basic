@@ -1,6 +1,6 @@
 export default {
 	getFilteredStudent: () => {
-		const allStudent = getAll.data;
+		const allStudent = getAllQl.data.data.student;
 		let filteredStudent = allStudent;
 
 		if (Select1.selectedOptionValue.length > 0) {
@@ -15,7 +15,10 @@ export default {
 
 		return filteredStudent;
 	},
-	
+	getClass:()=>{
+		const classing=ClassQl.data;
+		return classing;
+	},
 	handleReset: async () => {
 		resetWidget('Select1');
 		resetWidget('Select2');

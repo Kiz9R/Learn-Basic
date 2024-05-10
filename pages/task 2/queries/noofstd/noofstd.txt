@@ -1,0 +1,5 @@
+SELECT section, class, count(*) AS num_student
+From student
+Where school_name='Google Public School'
+Group By section, class
+ORDER BY class, section ASC;

@@ -1,1 +1,0 @@
-SELECT * FROM student WHERE school_name = '{{Select1.selectedOptionLabel}}' AND class = '{{Select2.selectedOptionLabel}}' AND section = '{{Select3.selectedOptionLabel}}';

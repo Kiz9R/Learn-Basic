@@ -29,34 +29,34 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "task 1_Class",
-              "name": "Class",
+              "id": "task 1_ClassQl",
+              "name": "ClassQl",
               "confirmBeforeExecute": false,
-              "pluginType": "DB",
+              "pluginType": "API",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "task 1_School_Name",
-              "name": "School_Name",
+              "id": "task 1_SchoolNameQl",
+              "name": "SchoolNameQl",
               "confirmBeforeExecute": false,
-              "pluginType": "DB",
+              "pluginType": "API",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "task 1_Section",
-              "name": "Section",
+              "id": "task 1_SectionQl",
+              "name": "SectionQl",
               "confirmBeforeExecute": false,
-              "pluginType": "DB",
+              "pluginType": "API",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "task 1_getAll",
-              "name": "getAll",
+              "id": "task 1_getAllQl",
+              "name": "getAllQl",
               "confirmBeforeExecute": false,
-              "pluginType": "DB",
+              "pluginType": "API",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }

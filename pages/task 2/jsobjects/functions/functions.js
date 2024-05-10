@@ -1,5 +1,18 @@
 export default {
 
+	
+	Palindrome:()=>{
+	let s=""
+	let s1="";
+	for(let i=0;i<s.length;i++){
+		let c=s.charAt(i);
+		s1=c+s1;
+	}
+		if(s===s1){  
+			return true;
+		}else
+			return false;
+},
 
 	manyUpdates:async()=>{
 		const updates=Table1.updatedRows.map(i=>i.allFields);

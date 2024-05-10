@@ -68,6 +68,7 @@
     },
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "columnUpdatedAt": 1714653169864,
+    "originalBottomRow": 62,
     "defaultSelectedRowIndices": [0],
     "needsErrorInfo": false,
     "mobileBottomRow": 51,
@@ -266,6 +267,7 @@
     "horizontalAlignment": "LEFT",
     "isVisibleSearch": false,
     "responsiveBehavior": "fill",
+    "originalTopRow": 17,
     "mobileLeftColumn": 12,
     "isVisiblePagination": true,
     "verticalAlignment": "CENTER"

@@ -1,0 +1,5 @@
+query student {
+  student(order_by: {section: asc}, distinct_on: section) {
+    section
+  }
+}
