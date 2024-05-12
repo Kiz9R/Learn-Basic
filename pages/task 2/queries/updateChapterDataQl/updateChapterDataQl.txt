@@ -1,5 +1,9 @@
-mutation updateChapter($condition: chapter_bool_exp!, $payload: chapter_set_input) {
-  update_chapter(where: $condition, _set: $payload) {
+mutation updateChapter($data: [chapter_updates!]!) {
+  update_chapter_many(updates: $data) {
     affected_rows
+    returning {
+      time_taken_in_sec
+      score
+    }
   }
 }

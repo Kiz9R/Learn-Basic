@@ -14,11 +14,11 @@
         {"key": "accentColor"},
         {"key": "borderRadius"},
         {"key": "boxShadow"},
+        {"key": "tableData"},
         {"key": "primaryColumns.rollNumber.computedValue"},
         {"key": "primaryColumns.studentName.computedValue"},
         {"key": "primaryColumns.score.computedValue"},
-        {"key": "primaryColumns.timeTaken.computedValue"},
-        {"key": "tableData"}
+        {"key": "primaryColumns.timeTaken.computedValue"}
     ],
     "needsHeightForContent": true,
     "leftColumn": 15,
@@ -68,7 +68,7 @@
         }
     },
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "columnUpdatedAt": 1715343291076,
+    "columnUpdatedAt": 1715508370749,
     "primaryColumnId": "roll_number",
     "defaultSelectedRowIndices": [0],
     "needsErrorInfo": false,
@@ -240,7 +240,7 @@
     "thumbnailSVG": "https://appcdn.appsmith.com/static/media/thumbnail.d0492f06681daa69baf92b07d3829dfc.svg",
     "widgetId": "pkt04amm2g",
     "minWidth": 450,
-    "tableData": "{{functions.showInTable.data}}",
+    "tableData": "{{getData.studentScore.data}}",
     "label": "Data",
     "searchKey": "",
     "parentId": "0",

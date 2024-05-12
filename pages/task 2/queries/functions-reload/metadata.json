@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "showInTable",
-    "fullyQualifiedName": "functions.showInTable",
+    "name": "reload",
+    "fullyQualifiedName": "functions.reload",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -22,7 +22,7 @@
       "selfReferencingDataPaths": [],
       "jsArguments": []
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -37,7 +37,7 @@
     "userPermissions": [],
     "createdAt": "2024-05-10T10:50:06Z"
   },
-  "id": "task 2_functions.showInTable",
+  "id": "task 2_functions.reload",
   "deleted": false,
   "gitSyncId": "663de6b4b721e03ca03f4569_67c5c264-14d2-4c39-8b56-883e5d7a446a"
 }

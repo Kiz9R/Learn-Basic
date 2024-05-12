@@ -28,6 +28,7 @@
     },
     "isVisible": true,
     "version": 1,
+    "onDropdownOpen": "",
     "tags": [
         "Suggested",
         "Select"
@@ -46,7 +47,10 @@
     "hideCard": false,
     "mobileRightColumn": 52,
     "parentColumnSpace": 19.234375,
-    "dynamicTriggerPathList": [{"key": "onOptionChange"}],
+    "dynamicTriggerPathList": [
+        {"key": "onOptionChange"},
+        {"key": "onDropdownOpen"}
+    ],
     "labelPosition": "Top",
     "sourceData": "{{ChapterNameQl.data.data.chapter}}",
     "key": "7is9089rtt",
@@ -65,6 +69,6 @@
     "responsiveBehavior": "fill",
     "mobileLeftColumn": 32,
     "maxDynamicHeight": 9000,
-    "onOptionChange": "{{getDataQl.run();}}",
+    "onOptionChange": "{{getData.studentScore();}}",
     "minDynamicHeight": 4
 }

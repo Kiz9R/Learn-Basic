@@ -1,5 +1,8 @@
-mutation updateStudent($condition: student_bool_exp!, $payload: student_set_input) {
-  update_student(where: $condition, _set: $payload) {
+mutation updateStudent($data: [student_updates!]!) {
+  update_student_many(updates: $data) {
     affected_rows
+    returning {
+      student_name
+    }
   }
 }

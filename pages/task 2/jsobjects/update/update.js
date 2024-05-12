@@ -1,34 +1,45 @@
 export default {
 	update:async()=>{
-		const updates=Table1.updatedRows.map(i=>i.allFields);
+		const updates = Table1.updatedRows.map(i => i.allFields);
 
-		// return updates;
-		let res="";
+		let studentUpdates = [];
+		let chapterUpdates = [];
+		
+		const chapterName=chapter.selectedOptionValue;
+		const subjectName=subject.selectedOptionValue;
+		const testName=test.selectedOptionValue;
 
 		for (let update of updates) {
 			const { rollNumber, studentName, score, timeTaken } = update;
+			
+			
 
-			const conditionStudent = {"roll_number": {"_eq": rollNumber}}
-			const payloadStudent= {"student_name":studentName}
-			const conditionChapter = {"roll_number": {"_eq": rollNumber}}
-			const payloadChapter = {"score": score, "time_taken_in_sec": timeTaken}
+			const condition1 = { "roll_number": { "_eq": rollNumber } };
+			const condition2 = { "roll_number": { "_eq": rollNumber }, "_and": {subject: {"_eq":subjectName }, "_and": {"test_name": {"_eq": testName}, "_and": {chapter_name: {"_eq": chapterName}}}}} ;
+			const payloadStudent = { "student_name": studentName };
+			const payloadChapter = { "score": score, "time_taken_in_sec": timeTaken };
 
+			const studentUpdate = { "where": condition1, "_set": payloadStudent };
+			const chapterUpdate = { "where": condition2, "_set": payloadChapter };
 
-
-			await updateStudentDataQl.run({
-				condition:conditionStudent,
-				payload:payloadStudent
-			});
-
-			await updateChapterDataQl.run({
-				condition:conditionChapter,
-				payload:payloadChapter
-			});
-
-
+			studentUpdates.push(studentUpdate);
+			chapterUpdates.push(chapterUpdate); 
 		}
-		await getDataQl.run();
-		return res;
+		
+		try {
+			await updateStudentDataQl.run({ data: studentUpdates });
+			await updateChapterDataQl.run({ data: chapterUpdates });
+			
+			await getData.studentScore();
+			
+			return showAlert("Update successfull", "success");
+		} catch (error) {
+			return showAlert(`${error.message}`,"error");
+		}
+
 	}
 
 }
+
+
+

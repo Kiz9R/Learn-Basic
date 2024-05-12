@@ -74,6 +74,17 @@
               "pluginType": "API",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "task 2_getData.studentScore",
+              "name": "getData.studentScore",
+              "collectionId": "task 2_getData",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  try {\n    const schoolVal = school.selectedOptionValue;\n    const subjectVal = subject.selectedOptionValue;\n    const classVal = Class.selectedOptionValue;\n    const sectionVal = section.selectedOptionValue;\n    const chapterVal = chapter.selectedOptionValue;\n    const testVal = test.selectedOptionValue;\n    if (schoolVal && subjectVal && classVal && sectionVal && chapterVal && testVal) await getDataQl.run(); else {\n      return [];\n    }\n    const chapters = getDataQl.data.data.chapter;\n    if (!chapters || chapters.length === 0) {\n      throw new Error('No data available');\n    }\n    const tableData = chapters.map(chapter => {\n      const student = chapter.Students;\n      return {\n        rollNumber: student.roll_number,\n        studentName: student.student_name,\n        score: chapter.score,\n        timeTaken: chapter.time_taken_in_sec\n      };\n    });\n    return tableData;\n  } catch (err) {\n    return showAlert(`${err.message}`, 'error');\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
             }
           ],
           [
@@ -89,19 +100,6 @@
                 "school.selectedOptionValue",
                 "Class.selectedOptionValue",
                 "chapter.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "task 2_functions.showInTable",
-              "name": "functions.showInTable",
-              "collectionId": "task 2_functions",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  const students = await getDataQl.data.data.student;\n  const tableData = students.map(student => {\n    return {\n      rollNumber: student.roll_number,\n      studentName: student.student_name,\n      score: student.Chapters.score,\n      timeTaken: student.Chapters.time_taken_in_sec\n    };\n  });\n  return tableData;\n}"
               ],
               "timeoutInMillisecond": 10000
             }

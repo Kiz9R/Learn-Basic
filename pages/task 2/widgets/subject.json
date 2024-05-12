@@ -65,6 +65,6 @@
     "responsiveBehavior": "fill",
     "mobileLeftColumn": 11,
     "maxDynamicHeight": 9000,
-    "onOptionChange": "{{getDataQl.run();}}",
+    "onOptionChange": "{{getData.studentScore();}}",
     "minDynamicHeight": 4
 }
