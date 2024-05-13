@@ -35,7 +35,7 @@
           "value": true
         },
         {
-          "value": "{\n  \"schoolName\": {{school.selectedOptionValue}},\n  \"subject\": {{subject.selectedOptionValue}},\n  \"class\": {{Class.selectedOptionValue}},\n  \"section\": {{section.selectedOptionValue}},\n  \"chapterName\": {{chapter.selectedOptionValue}},\n  \"testName\": {{test.selectedOptionValue}}\n}"
+          "value": "{\n  \"schoolName\":{{school.selectedOptionValue}}, \n  \"subject\": {{subject.selectedOptionValue}},\n  \"class\": {{Class.selectedOptionValue}},\n  \"section\": {{section.selectedOptionValue}},\n  \"chapterName\": {{chapter.selectedOptionValue}},\n  \"testName\": {{test.selectedOptionValue}}\n}"
         },
         {
           "value": {}
@@ -45,7 +45,7 @@
         "apiContentType": "application/json"
       }
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "pluginSpecifiedTemplates[1].value"

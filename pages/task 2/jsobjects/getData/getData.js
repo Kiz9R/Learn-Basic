@@ -12,11 +12,17 @@ export default {
 
 			if (schoolVal && subjectVal && classVal && sectionVal && chapterVal && testVal) {
 
-				await getStudentScoresRest.run();
+				await getDataQl.run();
+				
+				const errors=getDataQl.data.errors
 
-				const chapters = getStudentScoresRest.data.chapter;
+				if(errors){
+					throw new Error(errors[0].message);
+				}
+				
+				const data=getDataQl.data.data.chapter
 
-				tableData = chapters.map((chapter) => {
+				tableData = data.map((chapter) => {
 					const student = chapter.Students;
 					return {
 						rollNumber: student.roll_number,
@@ -36,9 +42,8 @@ export default {
 			return tableData;
 
 		} catch (err) {
-			return showAlert(`${err.message} - 400 BAD_REQUEST`, 'error');
+			return showAlert(`${err.message}`, 'error');
 		}
 	},
-// ${getStudentScoresRest.responseMeta.statusCode}
 
 }

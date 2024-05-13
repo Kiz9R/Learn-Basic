@@ -25,14 +25,13 @@ export default {
 			studentUpdates.push(studentUpdate);
 			chapterUpdates.push(chapterUpdate); 
 		}
+		
+		// return studentUpdates
 
 		try {
 
-			await updateStudentDataRest.run({data: studentUpdates})
-			await updateChapterDataRest.run({data: chapterUpdates});
-
-			// await updateStudentDataRest.run({data: chapterUpdates})
-			// await updateChapterDataRest.run({data: studentUpdates})
+			await updateStudentDataQl.run({data: studentUpdates})
+			await updateChapterDataQl.run({data: chapterUpdates});
 			
 			await getData.studentScore();
 

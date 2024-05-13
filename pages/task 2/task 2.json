@@ -82,15 +82,15 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async () => {\n  try {\n    const schoolVal = school.selectedOptionValue;\n    const subjectVal = subject.selectedOptionValue;\n    const classVal = Class.selectedOptionValue;\n    const sectionVal = section.selectedOptionValue;\n    const chapterVal = chapter.selectedOptionValue;\n    const testVal = test.selectedOptionValue;\n    let tableData = [];\n    if (schoolVal && subjectVal && classVal && sectionVal && chapterVal && testVal) {\n      await getStudentScoresRest.run();\n      const chapters = getStudentScoresRest.data.chapter;\n      tableData = chapters.map(chapter => {\n        const student = chapter.Students;\n        return {\n          rollNumber: student.roll_number,\n          studentName: student.student_name,\n          score: chapter.score,\n          timeTaken: chapter.time_taken_in_sec\n        };\n      });\n      if (tableData.length === 0) {\n        throw new Error('No data available, select fields properly');\n      }\n    }\n    if (tableData.length > 0) showAlert(\"Data retrived\", \"success\");\n    return tableData;\n  } catch (err) {\n    return showAlert(`${err.message} - 400 BAD_REQUEST`, 'error');\n  }\n}"
+                "async () => {\n  try {\n    const schoolVal = school.selectedOptionValue;\n    const subjectVal = subject.selectedOptionValue;\n    const classVal = Class.selectedOptionValue;\n    const sectionVal = section.selectedOptionValue;\n    const chapterVal = chapter.selectedOptionValue;\n    const testVal = test.selectedOptionValue;\n    let tableData = [];\n    if (schoolVal && subjectVal && classVal && sectionVal && chapterVal && testVal) {\n      await getDataQl.run();\n      const errors = getDataQl.data.errors;\n      if (errors) {\n        throw new Error(errors[0].message);\n      }\n      const data = getDataQl.data.data.chapter;\n      tableData = data.map(chapter => {\n        const student = chapter.Students;\n        return {\n          rollNumber: student.roll_number,\n          studentName: student.student_name,\n          score: chapter.score,\n          timeTaken: chapter.time_taken_in_sec\n        };\n      });\n      if (tableData.length === 0) {\n        throw new Error('No data available, select fields properly');\n      }\n    }\n    if (tableData.length > 0) showAlert(\"Data retrived\", \"success\");\n    return tableData;\n  } catch (err) {\n    return showAlert(`${err.message}`, 'error');\n  }\n}"
               ],
               "timeoutInMillisecond": 10000
             }
           ],
           [
             {
-              "id": "task 2_getStudentScoresRest",
-              "name": "getStudentScoresRest",
+              "id": "task 2_getDataQl",
+              "name": "getDataQl",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [

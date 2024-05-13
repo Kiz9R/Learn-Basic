@@ -1,0 +1,5 @@
+mutation MyMutation {
+  update_student(where: {rol_number: {_eq: 10001}}, _set: {student_name: "something"}) {
+    affected_rows
+  }
+}
