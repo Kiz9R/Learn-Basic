@@ -1,0 +1,8 @@
+{
+  "schoolName": {{school.selectedOptionValue}},
+  "subject": {{subject.selectedOptionValue}},
+  "class": {{Class.selectedOptionValue}},
+  "section": {{section.selectedOptionValue}},
+  "chapterName": {{chapter.selectedOptionValue}},
+  "testName": {{test.selectedOptionValue}}
+}
