@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "serverErrors",
+    "pageId": "task 2",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "task 2_serverErrors",
+  "deleted": false,
+  "gitSyncId": "6641bdde9eb7c443e50f6d41_88c4687f-dfdf-4f59-860c-68dba286a5b4"
+}

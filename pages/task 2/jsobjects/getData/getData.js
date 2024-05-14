@@ -1,23 +1,14 @@
 export default {
 	studentScore: async () => {
 		try {
-			const schoolVal = school.selectedOptionValue;
-			const subjectVal = subject.selectedOptionValue;
-			const classVal = Class.selectedOptionValue;
-			const sectionVal = section.selectedOptionValue;
-			const chapterVal = chapter.selectedOptionValue;
-			const testVal = test.selectedOptionValue;
-
+			const allFieldSelected = await userErrors.selectFieldError();
 			let tableData=[];
-
-			if (schoolVal && subjectVal && classVal && sectionVal && chapterVal && testVal) {
+			
+			if (allFieldSelected) {
 				
-				const flag = await middleErrors.getDataErrors();
-				// const flag = middleErrors.getDataErrors.data
-
-				if(flag==true)
-					throw new Error(getDataQl.data.errors[0].message);
-
+				const errorMessage=await errorMessages.errorMessage()
+				if(errorMessage)
+					throw new Error(errorMessage)
 
 				const data = await getDataQl.data.data.chapter
 
@@ -30,14 +21,10 @@ export default {
 						timeTaken: chapter.time_taken_in_sec
 					};
 				});
-
-				if (tableData.length===0) {
-					throw new Error('No data available, select fields properly');
-				}
-
 			}
-
-			if(tableData.length>0)
+			if (tableData.length===0) 
+				throw new Error('No data available, select fields properly');
+			else
 				showAlert("Data retrived","success")
 			return tableData;
 
