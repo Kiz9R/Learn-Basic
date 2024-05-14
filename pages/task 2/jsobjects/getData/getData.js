@@ -3,9 +3,9 @@ export default {
 		try {
 			const allFieldSelected = await userErrors.selectFieldError();
 			let tableData=[];
-			
+
 			if (allFieldSelected) {
-				
+
 				const errorMessage=await errorMessages.errorMessage()
 				if(errorMessage)
 					throw new Error(errorMessage)
@@ -21,10 +21,12 @@ export default {
 						timeTaken: chapter.time_taken_in_sec
 					};
 				});
+
+				if (tableData.length===0) 
+					throw new Error('No data available, select fields properly');
 			}
-			if (tableData.length===0) 
-				throw new Error('No data available, select fields properly');
-			else
+
+			if(tableData.length>0)
 				showAlert("Data retrived","success")
 			return tableData;
 
