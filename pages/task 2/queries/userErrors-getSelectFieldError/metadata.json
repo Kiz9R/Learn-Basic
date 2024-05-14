@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "selectFieldError",
-    "fullyQualifiedName": "userErrors.selectFieldError",
+    "name": "getSelectFieldError",
+    "fullyQualifiedName": "userErrors.getSelectFieldError",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -37,7 +37,7 @@
     "userPermissions": [],
     "createdAt": "2024-05-14T05:05:03Z"
   },
-  "id": "task 2_userErrors.selectFieldError",
+  "id": "task 2_userErrors.getSelectFieldError",
   "deleted": false,
   "gitSyncId": "6641bdde9eb7c443e50f6d41_7720482a-5519-40a3-afa9-83feab1ec376"
 }

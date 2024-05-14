@@ -1,12 +1,12 @@
 export default {
 	studentScore: async () => {
 		try {
-			const allFieldSelected = await userErrors.selectFieldError();
+			const allFieldSelected = await userErrors.getSelectFieldError();
 			let tableData=[];
 
 			if (allFieldSelected) {
 
-				const errorMessage=await errorMessages.errorMessage()
+				const errorMessage=await errorMessages.getErrorMessage()
 				if(errorMessage)
 					throw new Error(errorMessage)
 

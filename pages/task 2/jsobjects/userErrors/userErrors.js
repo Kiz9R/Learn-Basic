@@ -1,6 +1,6 @@
 export default {
 
-	selectFieldError:async()=>{
+	getSelectFieldError:async()=>{
 		try{	
 			const schoolVal = school.selectedOptionValue;
 			const subjectVal = subject.selectedOptionValue;
