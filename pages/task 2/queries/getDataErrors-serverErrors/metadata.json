@@ -3,7 +3,7 @@
   "pluginId": "js-plugin",
   "unpublishedAction": {
     "name": "serverErrors",
-    "fullyQualifiedName": "customErrors.serverErrors",
+    "fullyQualifiedName": "getDataErrors.serverErrors",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "task 2",
-    "collectionId": "task 2_customErrors",
+    "collectionId": "task 2_getDataErrors",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -37,7 +37,7 @@
     "userPermissions": [],
     "createdAt": "2024-05-13T12:32:48Z"
   },
-  "id": "task 2_customErrors.serverErrors",
+  "id": "task 2_getDataErrors.serverErrors",
   "deleted": false,
   "gitSyncId": "6641bdde9eb7c443e50f6d41_4f6e47d9-88ba-4979-94bc-77ef25d46ca9"
 }

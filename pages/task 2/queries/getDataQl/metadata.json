@@ -17,6 +17,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
+      "path": "",
       "headers": [
         {
           "key": "content-type",
@@ -45,7 +46,7 @@
         "apiContentType": "application/json"
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "pluginSpecifiedTemplates[1].value"

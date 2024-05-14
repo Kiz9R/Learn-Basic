@@ -35,7 +35,7 @@ export default {
 			
 			await getData.studentScore();
 
-			return showAlert(`Update successfull - ${updateChapterDataRest.responseMeta.statusCode}`, "success");
+			return showAlert(`Update successfull - ${updateChapterDataQl.responseMeta.statusCode}`, "success");
 		} catch (error) {
 			await getData.studentScore();
 			return showAlert(`Data cannot be updated - 500 SERVER_ERROR`,"error");

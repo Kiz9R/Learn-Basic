@@ -1,6 +1,6 @@
 {
   "unpublishedCollection": {
-    "name": "customErrors",
+    "name": "getDataErrors",
     "pageId": "task 2",
     "pluginId": "js-plugin",
     "pluginType": "JS",
@@ -9,7 +9,7 @@
     "variables": [],
     "userPermissions": []
   },
-  "id": "task 2_customErrors",
+  "id": "task 2_getDataErrors",
   "deleted": false,
   "gitSyncId": "6641bdde9eb7c443e50f6d41_124b92f4-500a-4562-b1e6-ee718f1fb5d1"
 }

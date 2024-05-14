@@ -15,9 +15,9 @@
         {"key": "borderRadius"},
         {"key": "boxShadow"},
         {"key": "tableData"},
+        {"key": "primaryColumns.score.computedValue"},
         {"key": "primaryColumns.rollNumber.computedValue"},
         {"key": "primaryColumns.studentName.computedValue"},
-        {"key": "primaryColumns.score.computedValue"},
         {"key": "primaryColumns.timeTaken.computedValue"}
     ],
     "needsHeightForContent": true,
@@ -68,7 +68,7 @@
         }
     },
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "columnUpdatedAt": 1715508370749,
+    "columnUpdatedAt": 1715609857848,
     "primaryColumnId": "roll_number",
     "defaultSelectedRowIndices": [0],
     "needsErrorInfo": false,
