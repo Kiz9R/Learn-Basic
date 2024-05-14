@@ -16,8 +16,12 @@ export default {
 	updateDataErrors:async()=>{
 		try{
 			
-			if(updateStudentDataQl.data.errors || updateChapterDataQl.data.errors)
-				return true
+			if(updateStudentDataQl.data.errors)
+				return "student"
+			
+			if(updateChapterDataQl.data.errors)
+				return "chapter"
+			
 			return false
 			
 		}catch(e){

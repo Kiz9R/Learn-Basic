@@ -11,11 +11,13 @@ export default {
 
 		for (let update of updates) {
 			const { rollNumber, studentName, score, timeTaken } = update;
-			
-			
+
+			const error = await userErrors.updateValidInput(studentName, score, timeTaken)
+			if(error)
+				throw new Error(error)
 
 			const condition1 = { "roll_number": { "_eq": rollNumber } };
-			const condition2 = { "roll_numbe": { "_eq": rollNumber }, "_and": {subject: {"_eq":subjectName }, "_and": {"test_name": {"_eq": testName}, "_and": {chapter_name: {"_eq": chapterName}}}}} ;
+			const condition2 = { "roll_number": { "_eq": rollNumber }, "_and": {subject: {"_eq":subjectName }, "_and": {"test_name": {"_eq": testName}, "_and": {chapter_name: {"_eq": chapterName}}}}} ;
 			const payloadStudent = { "student_name": studentName };
 			const payloadChapter = { "score": score, "time_taken_in_sec": timeTaken };
 
@@ -25,7 +27,7 @@ export default {
 			studentUpdates.push(studentUpdate);
 			chapterUpdates.push(chapterUpdate); 
 		}
-		
+
 		// return studentUpdates
 
 		try {
@@ -36,12 +38,12 @@ export default {
 			const error = await errorMessages.updateErrorMessage()
 			if(error)
 				throw new Error(error)
-			
+
 			await getData.studentScore();
 
 			return showAlert(`Update successfull`, "success");
 		} catch (error) {
-			
+
 			return showAlert(`${error.message}`,"error");
 		}
 

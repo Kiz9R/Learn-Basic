@@ -8,10 +8,10 @@ export default {
 
 				const middle = await middleErrors.getDataErrors();
 			if(middle)
-				return `${getDataQl.data.errors[0].message}`
+				return `${getDataQl.data.errors[0].message} - middleError, server error`
 
 		}catch(e){
-			return showAlert(`${e.message} - error occured in errorMessage in errorMessages`)
+			return showAlert(`${e.message} - error occured in getErrorMessage in errorMessages`)
 		}
 	},
 
@@ -19,13 +19,15 @@ export default {
 		try{
 			const server = await serverErrors.updateFatalError()
 			if(server)
-				return `Server is down, statusCode - ${getDataQl.responseMeta.statusCode}`
+				return `Server is down, statusCode - ${server}`
+
+
 
 				const middle = await middleErrors.updateDataErrors();
-			if(middle){
-				const errorMessage = updateStudentDataQl.data.errors[0].message || updateChapterDataQl.data.errors[0].message;
-				return errorMessage;
-			}
+			if(middle==='student')
+				return `${updateStudentDataQl.data.errors[0].message} - middleError, server error`
+				if(middle==='chapter')
+					return `${updateChapterDataQl.data.errors[0].message} - middleError, server error`
 
 		}catch(e){
 			return showAlert(`${e.message} - error occured in updateErrorMessage, errorMessages`)

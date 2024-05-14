@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "getFatalError",
-    "fullyQualifiedName": "serverErrors.getFatalError",
+    "name": "updateValidInput",
+    "fullyQualifiedName": "userErrors.updateValidInput",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,13 +14,23 @@
       "userPermissions": []
     },
     "pageId": "task 2",
-    "collectionId": "task 2_serverErrors",
+    "collectionId": "task 2_userErrors",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
-      "jsArguments": []
+      "jsArguments": [
+        {
+          "name": "studentName"
+        },
+        {
+          "name": "score"
+        },
+        {
+          "name": "timeTaken"
+        }
+      ]
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -35,9 +45,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-05-14T05:27:29Z"
+    "createdAt": "2024-05-14T07:55:54Z"
   },
-  "id": "task 2_serverErrors.getFatalError",
+  "id": "task 2_userErrors.updateValidInput",
   "deleted": false,
-  "gitSyncId": "6641bdde9eb7c443e50f6d41_5cef072f-4ed4-45b9-8b1a-83a39b2792b3"
+  "gitSyncId": "664210bc8d826d1885bd5093_bf99009c-df3c-4106-941a-64d1c3086787"
 }

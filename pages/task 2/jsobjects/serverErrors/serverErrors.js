@@ -14,8 +14,10 @@ export default {
 	updateFatalError:async()=>{
 		try{
 
-			if(updateStudentDataQl.responseMeta.statusCode !== "200 OK" || (updateChapterDataQl.responseMeta.statusCode !== "200 OK"))
-				return true
+			if(updateStudentDataQl.responseMeta.isExecutionSuccess==false )
+				return `${updateStudentDataQl.responseMeta.statusCode}`
+			if(updateChapterDataQl.responseMeta.isExecutionSuccess==false )
+				return `${updateChapterDataQl.responseMeta.statusCode}`
 			return false;	
 
 		}catch(e){
@@ -23,4 +25,4 @@ export default {
 		}
 	}
 	
-}
+}|| (updateChapterDataQl.responseMeta.statusCode !== "200 OK")

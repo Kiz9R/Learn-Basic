@@ -15,5 +15,23 @@ export default {
 			return showAlert(`${e.message} - error occured in selectFieldError, userError`);
 		}
 	},
+	updateValidInput:async( studentName, score, timeTaken)=>{
 
+		try{
+
+			const validRegex = /^[a-zA-Z\s]*$/;
+
+			if(!validRegex.test(studentName))
+				return 'Provide valid Inputs';
+
+			if(isNaN(score) || isNaN(timeTaken))
+				return 'Provide valid Inputs'
+
+			return false
+
+		}catch(e){
+			return showAlert(`${e.message} - error occured in updateValidInput, userError`)
+		}
+
+	}
 }
