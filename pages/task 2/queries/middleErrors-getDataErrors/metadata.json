@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "middleErrors",
-    "fullyQualifiedName": "getDataErrors.middleErrors",
+    "name": "getDataErrors",
+    "fullyQualifiedName": "middleErrors.getDataErrors",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "task 2",
-    "collectionId": "task 2_getDataErrors",
+    "collectionId": "task 2_middleErrors",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -35,9 +35,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-05-13T12:33:05Z"
+    "createdAt": "2024-05-14T04:47:44Z"
   },
-  "id": "task 2_getDataErrors.middleErrors",
+  "id": "task 2_middleErrors.getDataErrors",
   "deleted": false,
-  "gitSyncId": "6641bdde9eb7c443e50f6d41_c2bf17b3-13fe-4611-ab29-d7fc0f0b5526"
+  "gitSyncId": "6641bdde9eb7c443e50f6d41_cf6ca65d-01ff-4bbb-a3f8-9ba129b94cc5"
 }

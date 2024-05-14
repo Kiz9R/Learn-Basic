@@ -3,7 +3,7 @@
   "pluginId": "js-plugin",
   "unpublishedAction": {
     "name": "handleReset",
-    "fullyQualifiedName": "functions.handleReset",
+    "fullyQualifiedName": "middleErrors.handleReset",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "task 2",
-    "collectionId": "task 2_functions",
+    "collectionId": "task 2_middleErrors",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -37,7 +37,7 @@
     "userPermissions": [],
     "createdAt": "2024-05-04T09:06:04Z"
   },
-  "id": "task 2_functions.handleReset",
+  "id": "task 2_middleErrors.handleReset",
   "deleted": false,
   "gitSyncId": "6633822385b422541c178662_07ea93ff-59a1-4035-b023-c68ab7099b93"
 }

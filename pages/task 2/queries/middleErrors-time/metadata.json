@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "reload",
-    "fullyQualifiedName": "functions.reload",
+    "name": "time",
+    "fullyQualifiedName": "middleErrors.time",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "task 2",
-    "collectionId": "task 2_functions",
+    "collectionId": "task 2_middleErrors",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -35,9 +35,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-05-10T10:50:06Z"
+    "createdAt": "2024-05-10T12:42:04Z"
   },
-  "id": "task 2_functions.reload",
+  "id": "task 2_middleErrors.time",
   "deleted": false,
-  "gitSyncId": "663de6b4b721e03ca03f4569_67c5c264-14d2-4c39-8b56-883e5d7a446a"
+  "gitSyncId": "663de6b4b721e03ca03f4569_7f07e115-6e31-4f4c-b8ea-0f2adce1ae91"
 }

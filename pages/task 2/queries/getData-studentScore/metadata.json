@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "serverErrors",
-    "fullyQualifiedName": "getDataErrors.serverErrors",
+    "name": "studentScore",
+    "fullyQualifiedName": "getData.studentScore",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "task 2",
-    "collectionId": "task 2_getDataErrors",
+    "collectionId": "task 2_getData",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -22,7 +22,7 @@
       "selfReferencingDataPaths": [],
       "jsArguments": []
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -35,9 +35,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-05-13T12:32:48Z"
+    "createdAt": "2024-05-14T04:47:08Z"
   },
-  "id": "task 2_getDataErrors.serverErrors",
+  "id": "task 2_getData.studentScore",
   "deleted": false,
-  "gitSyncId": "6641bdde9eb7c443e50f6d41_4f6e47d9-88ba-4979-94bc-77ef25d46ca9"
+  "gitSyncId": "6641bdde9eb7c443e50f6d41_0006a914-0db8-48a5-ad00-a7b778940c14"
 }
