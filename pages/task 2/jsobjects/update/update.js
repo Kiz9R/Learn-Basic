@@ -43,8 +43,10 @@ export default {
 
 			return showAlert(`Update successfull`, "success");
 		} catch (error) {
-
-			return showAlert(`${error.message}`,"error");
+			let err= updateChapterDataQl.responseMeta.statusCode || updateStudentDataQl.responseMeta.statusCode;
+			if(err==="200 OK")
+				err="500"
+			return showAlert(`${error.message} - ${err}`,"error");
 		}
 
 	}

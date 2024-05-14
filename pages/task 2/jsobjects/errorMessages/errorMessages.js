@@ -17,15 +17,11 @@ export default {
 
 	updateErrorMessage:async()=>{
 		try{
-			const server = await serverErrors.updateFatalError()
-			if(server)
-				return `Server is down, statusCode - ${server}`
 
-
-
-				const middle = await middleErrors.updateDataErrors();
+			const middle = await middleErrors.updateDataErrors();
 			if(middle==='student')
 				return `${updateStudentDataQl.data.errors[0].message} - middleError, server error`
+
 				if(middle==='chapter')
 					return `${updateChapterDataQl.data.errors[0].message} - middleError, server error`
 
