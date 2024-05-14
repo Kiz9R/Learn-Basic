@@ -28,6 +28,17 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "task 2_getData.studentScore",
+              "name": "getData.studentScore",
+              "collectionId": "task 2_getData",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
               "id": "task 2_ChapterNameQl",
               "name": "ChapterNameQl",
               "confirmBeforeExecute": false,
@@ -73,33 +84,6 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "task 2_getData.studentScore",
-              "name": "getData.studentScore",
-              "collectionId": "task 2_getData",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  try {\n    const allFieldSelected = await userErrors.selectFieldError();\n    let tableData = [];\n    if (allFieldSelected) {\n      const errorMessage = await errorMessages.errorMessage();\n      if (errorMessage) throw new Error(errorMessage);\n      const data = await getDataQl.data.data.chapter;\n      tableData = data.map(chapter => {\n        const student = chapter.Students;\n        return {\n          rollNumber: student.roll_number,\n          studentName: student.student_name,\n          score: chapter.score,\n          timeTaken: chapter.time_taken_in_sec\n        };\n      });\n    }\n    if (tableData.length === 0) throw new Error('No data available, select fields properly'); else showAlert(\"Data retrived\", \"success\");\n    return tableData;\n  } catch (err) {\n    return showAlert(`${err.message}`, 'error');\n  }\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "task 2_getDataQl",
-              "name": "getDataQl",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "subject.selectedOptionValue",
-                "section.selectedOptionValue",
-                "test.selectedOptionValue",
-                "Class.selectedOptionValue",
-                "chapter.selectedOptionValue"
-              ],
               "timeoutInMillisecond": 10000
             }
           ]
