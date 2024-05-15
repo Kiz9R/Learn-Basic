@@ -32,12 +32,17 @@ export default {
 
 		try {
 
-			await updateStudentDataQl.run({data: studentUpdates})
-			await updateChapterDataQl.run({data: chapterUpdates});
+			const errorStudent = await backendErrors.errorMessage(updateStudentDataQl)
+			if(errorStudent)
+				throw new Error(errorStudent)
+			else
+				await updateStudentDataQl.run({data: studentUpdates});
 
-			const error = await errorMessages.updateErrorMessage()
-			if(error)
-				throw new Error(error)
+			const errorChapter = await backendErrors.errorMessage(updateChapterDataQl)
+			if(errorChapter)
+				throw new Error(errorChapter)
+			else
+				await updateChapterDataQl.run({data: chapterUpdates});
 
 			await getData.studentScore();
 

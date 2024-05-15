@@ -1,32 +1,16 @@
 export default {
 
-	getDataErrors:async(api)=>{
+	dataErrors:async(api)=>{
 		try{
-			await api.run();
-			
+
 			if(api.data.errors)
-				return true
-			
-			return false
+				return `${api.data.errors[0].message} - Backend Error`
+
+				return false
 		}catch(e){
-			return showAlert(`${e.message} - occured in getDataError`,'error')
+			return showAlert(`${e.message} - error occured at dataError in backendError`,'error')
 		}
-	},
-	
-	updateDataErrors:async()=>{
-		try{
-			
-			if(updateStudentDataQl.data.errors)
-				return "student"
-			
-			if(updateChapterDataQl.data.errors)
-				return "chapter"
-			
-			return false
-			
-		}catch(e){
-			return showAlert(`${e.message} - error occured in updateDataError, middleError`)
-		}
+
 	},
 
 }

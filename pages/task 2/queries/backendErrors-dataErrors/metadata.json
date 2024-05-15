@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "updateDataErrors",
-    "fullyQualifiedName": "backendErrors.updateDataErrors",
+    "name": "dataErrors",
+    "fullyQualifiedName": "backendErrors.dataErrors",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -20,7 +20,11 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
-      "jsArguments": []
+      "jsArguments": [
+        {
+          "name": "api"
+        }
+      ]
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -35,9 +39,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-05-14T06:36:42Z"
+    "createdAt": "2024-05-15T05:46:47Z"
   },
-  "id": "task 2_backendErrors.updateDataErrors",
+  "id": "task 2_backendErrors.dataErrors",
   "deleted": false,
-  "gitSyncId": "664210bc8d826d1885bd5093_07013f44-2ffe-481d-9630-d2f907e342ec"
+  "gitSyncId": "6641bdde9eb7c443e50f6d41_d5ade5f4-c04f-4ae1-a298-68dda828f179"
 }
