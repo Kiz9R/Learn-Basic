@@ -6,7 +6,7 @@ export default {
 
 			if (allFieldSelected) {
 
-				const errorMessage=await errorMessages.getErrorMessage()
+				const errorMessage=await errorMessages.getErrorMessage(getDataQl)
 				if(errorMessage)
 					throw new Error(errorMessage)
 

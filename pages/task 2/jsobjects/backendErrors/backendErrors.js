@@ -1,12 +1,12 @@
 export default {
 
-	getDataErrors:async()=>{
+	getDataErrors:async(api)=>{
 		try{
-			await getDataQl.run();
-
-			if(getDataQl.data.errors)
+			await api.run();
+			
+			if(api.data.errors)
 				return true
-
+			
 			return false
 		}catch(e){
 			return showAlert(`${e.message} - occured in getDataError`,'error')

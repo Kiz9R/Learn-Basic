@@ -84,10 +84,12 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async () => {\n  try {\n    const allFieldSelected = await userErrors.getSelectFieldError();\n    let tableData = [];\n    if (allFieldSelected) {\n      const errorMessage = await errorMessages.getErrorMessage();\n      if (errorMessage) throw new Error(errorMessage);\n      const data = await getDataQl.data.data.chapter;\n      tableData = data.map(chapter => {\n        const student = chapter.Students;\n        return {\n          rollNumber: student.roll_number,\n          studentName: student.student_name,\n          score: chapter.score,\n          timeTaken: chapter.time_taken_in_sec\n        };\n      });\n      if (tableData.length === 0) throw new Error('No data available, select fields properly');\n    }\n    if (tableData.length > 0) showAlert(\"Data retrived\", \"success\");\n    return tableData;\n  } catch (err) {\n    return showAlert(`${err.message}`, 'error');\n  }\n}"
+                "async () => {\n  try {\n    const allFieldSelected = await userErrors.getSelectFieldError();\n    let tableData = [];\n    if (allFieldSelected) {\n      const errorMessage = await errorMessages.getErrorMessage(getDataQl);\n      if (errorMessage) throw new Error(errorMessage);\n      const data = await getDataQl.data.data.chapter;\n      tableData = data.map(chapter => {\n        const student = chapter.Students;\n        return {\n          rollNumber: student.roll_number,\n          studentName: student.student_name,\n          score: chapter.score,\n          timeTaken: chapter.time_taken_in_sec\n        };\n      });\n      if (tableData.length === 0) throw new Error('No data available, select fields properly');\n    }\n    if (tableData.length > 0) showAlert(\"Data retrived\", \"success\");\n    return tableData;\n  } catch (err) {\n    return showAlert(`${err.message}`, 'error');\n  }\n}"
               ],
               "timeoutInMillisecond": 10000
-            },
+            }
+          ],
+          [
             {
               "id": "task 2_getDataQl",
               "name": "getDataQl",

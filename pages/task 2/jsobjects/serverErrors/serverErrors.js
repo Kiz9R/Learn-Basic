@@ -1,8 +1,8 @@
 export default {
-	getFatalError:async()=>{
+	getFatalError:async(api)=>{
 		try{
 
-			if(getDataQl.responseMeta.statusCode !== "200 OK")
+			if(api.responseMeta.statusCode !== "200 OK")
 				return true
 			return false;	
 

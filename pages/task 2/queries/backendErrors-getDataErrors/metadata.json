@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "reload",
-    "fullyQualifiedName": "middleErrors.reload",
+    "name": "getDataErrors",
+    "fullyQualifiedName": "backendErrors.getDataErrors",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,13 +14,17 @@
       "userPermissions": []
     },
     "pageId": "task 2",
-    "collectionId": "task 2_middleErrors",
+    "collectionId": "task 2_backendErrors",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
-      "jsArguments": []
+      "jsArguments": [
+        {
+          "name": "api"
+        }
+      ]
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -35,9 +39,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-05-10T10:50:06Z"
+    "createdAt": "2024-05-14T04:47:44Z"
   },
-  "id": "task 2_middleErrors.reload",
+  "id": "task 2_backendErrors.getDataErrors",
   "deleted": false,
-  "gitSyncId": "663de6b4b721e03ca03f4569_67c5c264-14d2-4c39-8b56-883e5d7a446a"
+  "gitSyncId": "6641bdde9eb7c443e50f6d41_cf6ca65d-01ff-4bbb-a3f8-9ba129b94cc5"
 }

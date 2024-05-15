@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "Palindrome",
-    "fullyQualifiedName": "middleErrors.Palindrome",
+    "name": "updateDataErrors",
+    "fullyQualifiedName": "backendErrors.updateDataErrors",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "task 2",
-    "collectionId": "task 2_middleErrors",
+    "collectionId": "task 2_backendErrors",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -35,9 +35,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-05-07T14:41:09Z"
+    "createdAt": "2024-05-14T06:36:42Z"
   },
-  "id": "task 2_middleErrors.Palindrome",
+  "id": "task 2_backendErrors.updateDataErrors",
   "deleted": false,
-  "gitSyncId": "6633822385b422541c178662_78fb1e27-7e80-49e3-8e8a-b478a5b9e2f3"
+  "gitSyncId": "664210bc8d826d1885bd5093_07013f44-2ffe-481d-9630-d2f907e342ec"
 }

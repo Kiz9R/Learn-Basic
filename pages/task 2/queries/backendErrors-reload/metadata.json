@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "updateDataErrors",
-    "fullyQualifiedName": "middleErrors.updateDataErrors",
+    "name": "reload",
+    "fullyQualifiedName": "backendErrors.reload",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "task 2",
-    "collectionId": "task 2_middleErrors",
+    "collectionId": "task 2_backendErrors",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -35,9 +35,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-05-14T06:36:42Z"
+    "createdAt": "2024-05-10T10:50:06Z"
   },
-  "id": "task 2_middleErrors.updateDataErrors",
+  "id": "task 2_backendErrors.reload",
   "deleted": false,
-  "gitSyncId": "664210bc8d826d1885bd5093_07013f44-2ffe-481d-9630-d2f907e342ec"
+  "gitSyncId": "663de6b4b721e03ca03f4569_67c5c264-14d2-4c39-8b56-883e5d7a446a"
 }

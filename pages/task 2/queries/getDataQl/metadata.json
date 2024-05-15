@@ -36,7 +36,7 @@
           "value": true
         },
         {
-          "value": "{\n  \"schoolName\":{{school.selectedOptionValue}}, \n  \"subject\": {{subject.selectedOptionValue}},\n  \"class\": {{Class.selectedOptionValue}},\n  \"section\": {{section.selectedOptionValue}},\n  \"chapterName\": {{chapter.selectedOptionValue}},\n  \"testName\": {{test.selectedOptionValue}}\n}"
+          "value": "{\n  \"schoolNam\":{{school.selectedOptionValue}}, \n  \"subject\": {{subject.selectedOptionValue}},\n  \"class\": {{Class.selectedOptionValue}},\n  \"section\": {{section.selectedOptionValue}},\n  \"chapterName\": {{chapter.selectedOptionValue}},\n  \"testName\": {{test.selectedOptionValue}}\n}"
         },
         {
           "value": {}
