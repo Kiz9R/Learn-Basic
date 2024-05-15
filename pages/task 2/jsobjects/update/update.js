@@ -2,6 +2,8 @@ export default {
 	update:async()=>{
 		const updates = Table1.updatedRows.map(i => i.allFields);
 
+		// return updates
+
 		let studentUpdates = [];
 		let chapterUpdates = [];
 
@@ -29,29 +31,35 @@ export default {
 		}
 
 		// return studentUpdates
+		// return chapterUpdates
 
 		try {
+			
+			const serverErrorStudent = await serverErrors.getFatalError(updateStudentDataQl)
+			if(serverErrorStudent)
+				throw new Error(serverErrorStudent)
 
-			const errorStudent = await backendErrors.errorMessage(updateStudentDataQl)
-			if(errorStudent)
-				throw new Error(errorStudent)
-			else
-				await updateStudentDataQl.run({data: studentUpdates});
+			const serverErrorChapter = await serverErrors.getFatalError(updateChapterDataQl)
+			if(serverErrorChapter)
+				throw new Error(serverErrorChapter)
+			
 
-			const errorChapter = await backendErrors.errorMessage(updateChapterDataQl)
-			if(errorChapter)
-				throw new Error(errorChapter)
-			else
-				await updateChapterDataQl.run({data: chapterUpdates});
+			await updateStudentDataQl.run({data: studentUpdates});
+			const backendStudentError = await backendErrors.dataErrors(updateStudentDataQl);
+			if(backendStudentError)
+				throw new Error(backendStudentError)
+			
+			
+			await updateChapterDataQl.run({data: chapterUpdates});	
+			const backendChapterError = await backendErrors.dataErrors(updateChapterDataQl)
+			if(backendChapterError)
+				throw new Error(backendChapterError)
 
 			await getData.studentScore();
 
 			return showAlert(`Update successfull`, "success");
 		} catch (error) {
-			let err= updateChapterDataQl.responseMeta.statusCode || updateStudentDataQl.responseMeta.statusCode;
-			if(err==="200 OK")
-				err="500"
-			return showAlert(`${error.message} - ${err}`,"error");
+			return showAlert(`${error}`,"error");
 		}
 
 	}
