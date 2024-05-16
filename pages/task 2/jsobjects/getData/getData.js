@@ -5,9 +5,9 @@ export default {
 			let tableData=[];
 			
 
-			if (allFieldSelected) {
-
-				const error = await errors.dataErrors(getDataQl)
+			if (allFieldSelected){
+				
+				const error = await errors.dataErrors(getDataQl,false)
 				if(error)
 					throw new Error(error)
 
