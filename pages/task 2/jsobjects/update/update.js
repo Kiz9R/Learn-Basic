@@ -34,24 +34,14 @@ export default {
 		// return chapterUpdates
 
 		try {
-			
-			const serverErrorStudent = await serverErrors.getFatalError(updateStudentDataQl)
-			if(serverErrorStudent)
-				throw new Error(serverErrorStudent)
 
-			const serverErrorChapter = await serverErrors.getFatalError(updateChapterDataQl)
-			if(serverErrorChapter)
-				throw new Error(serverErrorChapter)
 			
-
-			await updateStudentDataQl.run({data: studentUpdates});
-			const backendStudentError = await backendErrors.dataErrors(updateStudentDataQl);
+			const backendStudentError = await errors.dataErrors(updateStudentDataQl,studentUpdates);
 			if(backendStudentError)
 				throw new Error(backendStudentError)
+	
 			
-			
-			await updateChapterDataQl.run({data: chapterUpdates});	
-			const backendChapterError = await backendErrors.dataErrors(updateChapterDataQl)
+			const backendChapterError = await errors.dataErrors(updateChapterDataQl,chapterUpdates)
 			if(backendChapterError)
 				throw new Error(backendChapterError)
 

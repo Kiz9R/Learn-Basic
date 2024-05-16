@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 620,
+          "bottomRow": 800,
           "containerStyle": "none",
           "snapRows": 79,
           "parentRowSpace": 1,
@@ -84,7 +84,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async () => {\n  try {\n    const allFieldSelected = await userErrors.getSelectFieldError();\n    let tableData = [];\n    if (allFieldSelected) {\n      const serverError = await serverErrors.getFatalError(getDataQl);\n      if (serverError) throw new Error(serverError);\n      await getDataQl.run();\n      const error = await backendErrors.dataErrors(getDataQl);\n      if (error) throw new Error(error);\n      const data = await getDataQl.data.data.chapter;\n      tableData = data.map(chapter => {\n        const student = chapter.Students;\n        return {\n          rollNumber: student.roll_number,\n          studentName: student.student_name,\n          score: chapter.score,\n          timeTaken: chapter.time_taken_in_sec\n        };\n      });\n      if (tableData.length === 0) throw new Error('No data available, select fields properly');\n    }\n    if (tableData.length > 0) showAlert(\"Data retrived\", \"success\");\n    return tableData;\n  } catch (err) {\n    return showAlert(`${err.message}`, 'error');\n  }\n}"
+                "async () => {\n  try {\n    const allFieldSelected = await userErrors.getSelectFieldError();\n    let tableData = [];\n    if (allFieldSelected) {\n      const error = await errors.dataErrors(getDataQl);\n      if (error) throw new Error(error);\n      const data = await getDataQl.data.data.chapter;\n      tableData = data.map(chapter => {\n        const student = chapter.Students;\n        return {\n          rollNumber: student.roll_number,\n          studentName: student.student_name,\n          score: chapter.score,\n          timeTaken: chapter.time_taken_in_sec\n        };\n      });\n      if (tableData.length === 0) throw new Error('No data available, select fields properly');\n    }\n    if (tableData.length > 0) showAlert(\"Data retrived\", \"success\");\n    return tableData;\n  } catch (err) {\n    return showAlert(`${err.message}`, 'error');\n  }\n}"
               ],
               "timeoutInMillisecond": 10000
             }

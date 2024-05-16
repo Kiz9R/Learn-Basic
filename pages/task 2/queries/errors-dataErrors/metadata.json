@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "getFatalError",
-    "fullyQualifiedName": "serverErrors.getFatalError",
+    "name": "dataErrors",
+    "fullyQualifiedName": "errors.dataErrors",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "task 2",
-    "collectionId": "task 2_serverErrors",
+    "collectionId": "task 2_errors",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -23,6 +23,9 @@
       "jsArguments": [
         {
           "name": "api"
+        },
+        {
+          "name": "params"
         }
       ]
     },
@@ -39,9 +42,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-05-14T09:43:42Z"
+    "createdAt": "2024-05-15T05:46:47Z"
   },
-  "id": "task 2_serverErrors.getFatalError",
+  "id": "task 2_errors.dataErrors",
   "deleted": false,
-  "gitSyncId": "6641bdde9eb7c443e50f6d41_5a1a19dc-e18a-49b8-8a03-8a1a4c9c313d"
+  "gitSyncId": "6641bdde9eb7c443e50f6d41_d5ade5f4-c04f-4ae1-a298-68dda828f179"
 }
