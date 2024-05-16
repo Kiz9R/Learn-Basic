@@ -13,7 +13,7 @@ export default {
 			if(api.data.errors)
 				return `${api.data.errors[0].message} - Backend Error`
 
-				return `${}`
+				return false
 		}catch(e){
 			return showAlert(`${e.message} - server error occured at dataError in errors`,'error')
 		}
