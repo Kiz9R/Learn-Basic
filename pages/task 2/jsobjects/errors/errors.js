@@ -6,12 +6,12 @@ export default {
 			let res=""
 
 			if(!params)
-				res = await api.run();
+				res =  await api.run();
 			else
 				res = await api.run({data:params})
 
-			if(api.data.errors)
-				return `${api.data.errors[0].message} - Backend Error`
+			if(res.data.errors)
+				return `${res.data.errors[0].message} - Backend Error`
 
 				return false
 		}catch(e){

@@ -7,6 +7,8 @@ export default {
 
 			if (allFieldSelected){
 				
+				// await getDataQl.run()
+				
 				const error = await errors.dataErrors(getDataQl,false)
 				if(error)
 					throw new Error(error)
