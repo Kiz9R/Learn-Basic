@@ -3,10 +3,11 @@ export default {
 		try {
 			const allFieldSelected = await userErrors.getSelectFieldError();
 			let tableData=[];
+			
 
 			if (allFieldSelected) {
 
-				const error=await errors.dataErrors(getDataQl)
+				const error = await errors.dataErrors(getDataQl)
 				if(error)
 					throw new Error(error)
 

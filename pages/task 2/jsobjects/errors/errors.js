@@ -2,9 +2,7 @@ export default {
 
 	dataErrors:async(api,params)=>{
 		try{
-			
 			await api.run({data:params})
-
 			if(api.data.errors)
 				return `${api.data.errors[0].message} - Backend Error`
 

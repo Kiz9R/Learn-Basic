@@ -35,12 +35,13 @@ export default {
 
 		try {
 
-			
+			// await updateStudentDataQl.run({data:studentUpdates})
+
 			const backendStudentError = await errors.dataErrors(updateStudentDataQl,studentUpdates);
 			if(backendStudentError)
 				throw new Error(backendStudentError)
-	
-			
+
+			// await updateChapterDataQl.run({data:chapterUpdates})
 			const backendChapterError = await errors.dataErrors(updateChapterDataQl,chapterUpdates)
 			if(backendChapterError)
 				throw new Error(backendChapterError)
