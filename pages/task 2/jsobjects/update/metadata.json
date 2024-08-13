@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "663de6b4b721e03ca03f4569_10952c76-df6d-41f1-b7d9-aba979d1fe96",
+  "id": "task 2_update",
   "unpublishedCollection": {
     "name": "update",
     "pageId": "task 2",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "task 2_update",
-  "deleted": false,
-  "gitSyncId": "663de6b4b721e03ca03f4569_10952c76-df6d-41f1-b7d9-aba979d1fe96"
+    "variables": []
+  }
 }

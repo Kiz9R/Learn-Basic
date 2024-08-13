@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "6633822385b422541c178662_9472620c-29c9-40e5-99cd-e6bc6b5a22fc",
+  "id": "task 2_functions",
   "unpublishedCollection": {
     "name": "functions",
     "pageId": "task 2",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "task 2_functions",
-  "deleted": false,
-  "gitSyncId": "6633822385b422541c178662_9472620c-29c9-40e5-99cd-e6bc6b5a22fc"
+    "variables": []
+  }
 }
