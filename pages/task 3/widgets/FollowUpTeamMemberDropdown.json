@@ -1,0 +1,25 @@
+{
+  "bottomRow": 31,
+  "defaultOptionValue": "Ritankar",
+  "leftColumn": 52,
+  "options": [
+    {
+      "label": "Ritankar",
+      "value": "Ritankar"
+    },
+    {
+      "label": "Johnson",
+      "value": "Johnson"
+    },
+    {
+      "label": "Saran",
+      "value": "Saran"
+    }
+  ],
+  "parentId": "0",
+  "rightColumn": 64,
+  "topRow": 27,
+  "type": "SELECT_WIDGET",
+  "widgetId": "follow_up_team_member_dropdown",
+  "widgetName": "FollowUpTeamMemberDropdown"
+}

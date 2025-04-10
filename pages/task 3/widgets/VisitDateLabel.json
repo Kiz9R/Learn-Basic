@@ -1,0 +1,15 @@
+{
+  "bottomRow": 5,
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "1rem",
+  "fontStyle": "BOLD",
+  "leftColumn": 52,
+  "parentId": "0",
+  "rightColumn": 64,
+  "text": "Visit Date",
+  "textAlign": "LEFT",
+  "topRow": 1,
+  "type": "TEXT_WIDGET",
+  "widgetId": "visit_date_label",
+  "widgetName": "VisitDateLabel"
+}

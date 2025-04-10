@@ -1,0 +1,11 @@
+{
+  "bottomRow": 42,
+  "leftColumn": 18,
+  "parentId": "0",
+  "placeholderText": "Remarks",
+  "rightColumn": 34,
+  "topRow": 38,
+  "type": "INPUT_WIDGET_V2",
+  "widgetId": "remarks_input",
+  "widgetName": "RemarksInput"
+}

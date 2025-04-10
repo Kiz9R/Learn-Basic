@@ -1,0 +1,21 @@
+{
+  "bottomRow": 31,
+  "defaultOptionValue": "yes",
+  "leftColumn": 18,
+  "options": [
+    {
+      "label": "Yes",
+      "value": "yes"
+    },
+    {
+      "label": "No",
+      "value": "no"
+    }
+  ],
+  "parentId": "0",
+  "rightColumn": 34,
+  "topRow": 27,
+  "type": "SELECT_WIDGET",
+  "widgetId": "follow_up_dropdown",
+  "widgetName": "FollowUpDropdown"
+}

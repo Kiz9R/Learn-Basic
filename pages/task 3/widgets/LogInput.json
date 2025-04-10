@@ -1,0 +1,11 @@
+{
+  "bottomRow": 20,
+  "leftColumn": 18,
+  "parentId": "0",
+  "placeholderText": "Log",
+  "rightColumn": 34,
+  "topRow": 16,
+  "type": "INPUT_WIDGET_V2",
+  "widgetId": "log_input",
+  "widgetName": "LogInput"
+}

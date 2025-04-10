@@ -1,0 +1,15 @@
+{
+  "bottomRow": 16,
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "1rem",
+  "fontStyle": "BOLD",
+  "leftColumn": 52,
+  "parentId": "0",
+  "rightColumn": 64,
+  "text": "Task Status",
+  "textAlign": "LEFT",
+  "topRow": 12,
+  "type": "TEXT_WIDGET",
+  "widgetId": "task_status_label",
+  "widgetName": "TaskStatusLabel"
+}

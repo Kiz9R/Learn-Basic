@@ -1,0 +1,15 @@
+{
+  "bottomRow": 5,
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "1rem",
+  "fontStyle": "BOLD",
+  "leftColumn": 1,
+  "parentId": "0",
+  "rightColumn": 17,
+  "text": "School Name",
+  "textAlign": "LEFT",
+  "topRow": 1,
+  "type": "TEXT_WIDGET",
+  "widgetId": "school_name_label",
+  "widgetName": "SchoolNameLabel"
+}

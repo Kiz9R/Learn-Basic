@@ -1,0 +1,25 @@
+{
+  "bottomRow": 31,
+  "defaultOptionValue": "pending",
+  "leftColumn": 1,
+  "options": [
+    {
+      "label": "Pending",
+      "value": "pending"
+    },
+    {
+      "label": "Completed",
+      "value": "completed"
+    },
+    {
+      "label": "Not Required",
+      "value": "not_required"
+    }
+  ],
+  "parentId": "0",
+  "rightColumn": 17,
+  "topRow": 27,
+  "type": "SELECT_WIDGET",
+  "widgetId": "follow_up_status_dropdown",
+  "widgetName": "FollowUpStatusDropdown"
+}

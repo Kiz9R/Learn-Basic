@@ -1,0 +1,21 @@
+{
+  "bottomRow": 20,
+  "defaultOptionValue": "teachers session",
+  "leftColumn": 1,
+  "options": [
+    {
+      "label": "teachers session",
+      "value": "teachers session"
+    },
+    {
+      "label": "Student session",
+      "value": "Student session"
+    }
+  ],
+  "parentId": "0",
+  "rightColumn": 17,
+  "topRow": 16,
+  "type": "SELECT_WIDGET",
+  "widgetId": "session_dropdown",
+  "widgetName": "SessionDropdown"
+}

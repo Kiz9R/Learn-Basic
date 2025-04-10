@@ -1,0 +1,25 @@
+{
+  "bottomRow": 31,
+  "defaultOptionValue": "tech",
+  "leftColumn": 35,
+  "options": [
+    {
+      "label": "tech",
+      "value": "tech"
+    },
+    {
+      "label": "content",
+      "value": "content"
+    },
+    {
+      "label": "ops",
+      "value": "ops"
+    }
+  ],
+  "parentId": "0",
+  "rightColumn": 51,
+  "topRow": 27,
+  "type": "SELECT_WIDGET",
+  "widgetId": "follow_up_team_dropdown",
+  "widgetName": "FollowUpTeamDropdown"
+}

@@ -1,0 +1,12 @@
+{
+  "bottomRow": 49,
+  "buttonColor": "#E54D2E",
+  "leftColumn": 30,
+  "parentId": "0",
+  "rightColumn": 40,
+  "text": "Delete",
+  "topRow": 45,
+  "type": "BUTTON_WIDGET",
+  "widgetId": "delete_button",
+  "widgetName": "DeleteButton"
+}

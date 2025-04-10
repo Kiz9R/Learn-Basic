@@ -1,0 +1,15 @@
+{
+  "bottomRow": 27,
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "1rem",
+  "fontStyle": "BOLD",
+  "leftColumn": 1,
+  "parentId": "0",
+  "rightColumn": 17,
+  "text": "Follow up status",
+  "textAlign": "LEFT",
+  "topRow": 23,
+  "type": "TEXT_WIDGET",
+  "widgetId": "follow_up_status_label",
+  "widgetName": "FollowUpStatusLabel"
+}
