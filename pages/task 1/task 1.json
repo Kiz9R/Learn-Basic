@@ -23,25 +23,7 @@
           "type": "CANVAS_WIDGET",
           "version": 92,
           "widgetId": "0",
-          "widgetName": "MainContainer",
-          "children": [
-            {
-              "type": "DATE_PICKER_WIDGET",
-              "widgetId": "date_filter_widget",
-              "widgetName": "Date Filter",
-              "leftColumn": 30,
-              "rightColumn": 50,
-              "topRow": 10,
-              "bottomRow": 20,
-              "isVisible": true,
-              "label": "Date Filter",
-              "defaultDate": "",
-              "minDate": "",
-              "maxDate": "",
-              "isRequired": false,
-              "isDisabled": false
-            }
-          ]
+          "widgetName": "MainContainer"
         }
       }
     ],
