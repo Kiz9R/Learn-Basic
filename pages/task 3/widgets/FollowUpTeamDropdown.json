@@ -1,0 +1,47 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 32,
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "accentColor"
+    }
+  ],
+  "iconSVG": "/static/media/icon.bd99caba.svg",
+  "isLoading": false,
+  "isVisible": true,
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelText": "Follow up Team",
+  "labelWidth": 5,
+  "leftColumn": 45,
+  "options": [
+    {
+      "label": "tech",
+      "value": "tech"
+    },
+    {
+      "label": "content",
+      "value": "content"
+    },
+    {
+      "label": "ops",
+      "value": "ops"
+    }
+  ],
+  "parentColumnSpace": 19.234375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "topRow": 27,
+  "widgetId": "followupteam_dropdown",
+  "widgetName": "FollowUpTeamDropdown",
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "widgetType": "SELECT_WIDGET"
+}

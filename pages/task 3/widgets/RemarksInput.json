@@ -1,0 +1,34 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 40,
+  "defaultText": "",
+  "displayName": "Input",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "accentColor"
+    }
+  ],
+  "iconSVG": "/static/media/icon.9f505595.svg",
+  "isLoading": false,
+  "isVisible": true,
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelText": "Remarks",
+  "labelWidth": 5,
+  "leftColumn": 45,
+  "parentColumnSpace": 19.234375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placeholderText": "Remarks",
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "topRow": 35,
+  "widgetId": "remarks_input",
+  "widgetName": "RemarksInput",
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "widgetType": "INPUT_WIDGET_V2"
+}

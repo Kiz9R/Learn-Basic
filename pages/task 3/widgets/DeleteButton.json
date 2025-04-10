@@ -1,0 +1,28 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "buttonColor": "#D4504A",
+  "buttonVariant": "PRIMARY",
+  "displayName": "Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+  "isLoading": false,
+  "isVisible": true,
+  "label": "Delete",
+  "leftColumn": 44,
+  "onClick": "",
+  "parentColumnSpace": 19.234375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 54,
+  "topRow": 45,
+  "bottomRow": 49,
+  "widgetId": "delete_button",
+  "widgetName": "DeleteButton",
+  "widgetType": "BUTTON_WIDGET"
+}

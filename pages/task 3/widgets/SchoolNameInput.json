@@ -1,0 +1,34 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 8,
+  "defaultText": "",
+  "displayName": "Input",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "accentColor"
+    }
+  ],
+  "iconSVG": "/static/media/icon.9f505595.svg",
+  "isLoading": false,
+  "isVisible": true,
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelText": "School Name",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "parentColumnSpace": 19.234375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placeholderText": "Name",
+  "renderMode": "CANVAS",
+  "rightColumn": 22,
+  "topRow": 3,
+  "widgetId": "schoolname_input",
+  "widgetName": "SchoolNameInput",
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "widgetType": "INPUT_WIDGET_V2"
+}
