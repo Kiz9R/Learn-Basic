@@ -1,0 +1,31 @@
+{
+  "bottomRow": 15,
+  "defaultDate": "",
+  "isDisabled": false,
+  "isRequired": false,
+  "isVisible": true,
+  "label": "Date Filter",
+  "leftColumn": 0,
+  "maxDate": "",
+  "minDate": "",
+  "onDateSelected": "{{getDataQl.run();}}",
+  "parentColumnSpace": 19.234375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 24,
+  "searchTags": [
+    "datepicker"
+  ],
+  "tags": [
+    "Suggested",
+    "Date"
+  ],
+  "thumbnailSVG": "https://appcdn.appsmith.com/static/media/thumbnail.9aef24cb159e9c6e4d0f1d7ca4fb0c79.svg",
+  "topRow": 8,
+  "type": "DATE_PICKER_WIDGET",
+  "version": 1,
+  "widgetId": "datefilter123",
+  "widgetName": "DateFilter"
+}
